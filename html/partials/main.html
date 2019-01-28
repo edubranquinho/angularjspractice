@@ -1,0 +1,13 @@
+<div>
+  <form name="myForm">
+    <label for="mySelect">Make a choice:</label>
+    <select
+      name="mySelect"
+      id="mySelect"
+      ng-options="option.nome for option in fornecedores track by option.id"
+      ng-model="selectedOption"></select>
+  </form>
+  <hr />
+  <p>option = {{ selectedOption }}</p>
+  <br />
+</div>
